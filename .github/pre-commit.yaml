@@ -2,9 +2,6 @@ on: pull_request
 
 concurrency: ci-${{ github.ref }}
 
-env:
-  TERRAGRUNT_VERSION: '0.38.4'
-
 jobs:
   pre-commit:
     runs-on: ubuntu-latest
